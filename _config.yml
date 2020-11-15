@@ -1,10 +1,8 @@
-title: Your awesome title
-author: GitHub User
-email: your-email@domain.com
+title: Jason's 200 Words A Day archive
+author: Jason Leow
+email: 
 description: > # this means to ignore newlines until "show_exerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  design + public good + indie maker + mindfulness ⛩. Started https://outsprint.io to run design sprints with gov orgs. Made https://sweetjamsites.com, https://ketolistsingapore.com, https://publicdesignvault.com. Made 1 product a month under #1mvp1month. Now learning programming #decodingcoding.
 show_excerpts: true # set to true to show excerpts on the homepage
 
 # Minima date format
@@ -12,7 +10,7 @@ show_excerpts: true # set to true to show excerpts on the homepage
 sass:
   sass_dir: _sass
 plainwhite:
-  name: Adam Denisov
+  name: Jason Leow
   tagline: Developer. Designer
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
@@ -26,9 +24,9 @@ plainwhite:
     - post
   # generate social links in footer
   social_links:
-    twitter: samarsault
-    github:  samarsault
-    linkedIn: in/samarsault
+    twitter: jasonleowsg
+    github:  jasonleow
+    #linkedIn: in/samarsault
     #rss: rss
     #dribbble: jekyll
     #flickr:   jekyll
@@ -54,6 +52,18 @@ plainwhite:
 
 # Build settings
 theme: plainwhite
+
+collections:
+  articles:
+    output: true
+    permalink: /:collection/:path
+    
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
 
 plugins:
   - jekyll-seo-tag
