@@ -1,8 +1,8 @@
-title: Jason's 200 Words A Day archive
-author: Jason Leow
+title: Your 200 Words A Day archive
+author: John Doe
 email: 
 description: > # this means to ignore newlines until "show_exerpts:"
-  design + public good + indie maker + mindfulness ⛩. Started https://outsprint.io to run design sprints with gov orgs. Made https://sweetjamsites.com, https://ketolistsingapore.com, https://publicdesignvault.com. Made 1 product a month under #1mvp1month. Now learning programming #decodingcoding.
+  Part of TeamStreak
 show_excerpts: true # set to true to show excerpts on the homepage
 
 # Minima date format
@@ -10,8 +10,8 @@ show_excerpts: true # set to true to show excerpts on the homepage
 sass:
   sass_dir: _sass
 plainwhite:
-  name: Jason Leow
-  tagline: Developer. Designer
+  name: John Doe
+  tagline: Writer.
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
   search: true # set to true to enable searchbar
@@ -24,8 +24,8 @@ plainwhite:
     - post
   # generate social links in footer
   social_links:
-    twitter: jasonleowsg
-    github:  jasonleow
+    twitter: twitter
+    github:  twitter
     #linkedIn: in/samarsault
     #rss: rss
     #dribbble: jekyll
