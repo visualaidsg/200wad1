@@ -4,17 +4,17 @@ sitemap:
   exclude: 'yes'
 ---
 [
-  {% for post in site.posts %}
+  {% for article in site.articles %}
     {
-      "title"    : "{{ post.title | escape }}",
-      "title-lower"    : "{{ post.title | escape | downcase}}",
-      "sub-titile" : "{{ post.subtitle | escape }}",
-      "sub-titile-lower" : "{{ post.subtitle | escape | downcase}}",
-      "categories" : "{{ post.categories }}",
-      "tags"     : "{{ post.tags | join: ', ' }}",
-      "url"      : "{{ site.baseurl }}{{ post.url }}",
-      "date"     : "{{ post.date }}",
-      "content"     : "{{ post.content | strip_html | strip_newlines | remove_chars | escape | truncate:200 }}"
+      "title"    : "{{ article.title | escape }}",
+      "title-lower"    : "{{ article.title | escape | downcase}}",
+      "sub-titile" : "{{ article.subtitle | escape }}",
+      "sub-titile-lower" : "{{ article.subtitle | escape | downcase}}",
+      "categories" : "{{ article.categories }}",
+      "tags"     : "{{ article.tags | join: ', ' }}",
+      "url"      : "{{ site.baseurl }}{{ article.url }}",
+      "date"     : "{{ article.published_at }}",
+      "content"     : "{{ article.content | strip_html | strip_newlines | remove_chars | escape | truncate:200 }}"
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]
