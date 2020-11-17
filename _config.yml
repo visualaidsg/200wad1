@@ -57,7 +57,7 @@ collections:
   articles:
     output: true
     permalink: /:collection/:path
-    sort_by: date_format
+    sort_by: published_at
     
 defaults:
   -
