@@ -8,7 +8,7 @@ layout: default
 
 {{ content }}
 
-{% assign publishedlist = site.articles | sort: 'published_at'  %}
+{% assign publishedlist = site.articles | sort: 'published_at', 'last'  %}
 {%- if site.articles.size > 0 -%}
   <ul class="posts">
     <!-- <li class="posts-labelgroup" id="posts-labelgroup">
